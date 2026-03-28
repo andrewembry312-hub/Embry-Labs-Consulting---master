@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return send_from_directory(HTML, 'index.html')
+    return send_from_directory(BASE, 'index.html')
 
 @app.route('/assets/<path:filename>')
 def assets(filename):
